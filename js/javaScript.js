@@ -8,3 +8,11 @@ itemMenu.forEach(function(iten) {
         e.target.classList.add("active");
     });
 });
+
+
+function DarkMode(){
+    var cuerpoweb = document.body;
+    cuerpoweb.classList.toggle("dark-mode");
+
+}
+
