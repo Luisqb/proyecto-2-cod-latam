@@ -43,9 +43,111 @@ header {
     box-shadow: 0 4px 12px 5px grey;
 }
 
-.logo{
-    width: 120px;
-    margin-left: 16px;  
+/*Logo personal*/
+.checkbox-wrapper-16 *,
+.checkbox-wrapper-16 *:after,
+.checkbox-wrapper-16 *:before {
+box-sizing: border-box;
+}
+
+.checkbox-wrapper-16 .checkbox-input {
+clip: rect(0 0 0 0);
+-webkit-clip-path: inset(100%);
+clip-path: inset(100%);
+height: 1px;
+overflow: hidden;
+position: absolute;
+white-space: nowrap;
+width: 1px;
+}
+
+.checkbox-wrapper-16 .checkbox-input:checked + .checkbox-tile {
+border-color: #2260ff;
+box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+color: #2260ff;
+}
+
+.checkbox-wrapper-16 .checkbox-input:checked + .checkbox-tile:before {
+transform: scale(1);
+opacity: 1;
+background-color: #2260ff;
+border-color: #2260ff;
+}
+
+.checkbox-wrapper-16 .checkbox-input:checked + .checkbox-tile .checkbox-icon,
+.checkbox-wrapper-16 .checkbox-input:checked + .checkbox-tile .checkbox-label {
+color: #2260ff;
+}
+
+.checkbox-wrapper-16 .checkbox-input:focus + .checkbox-tile {
+border-color: #2260ff;
+box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1), 0 0 0 4px #b5c9fc;
+}
+
+.checkbox-wrapper-16 .checkbox-input:focus + .checkbox-tile:before {
+transform: scale(1);
+opacity: 1;
+}
+
+.checkbox-wrapper-16 .checkbox-tile {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+width: 7rem;
+min-height: 5rem;
+border-radius: 0.5rem;
+border: 2px solid #b5bfd9;
+background-color: #fff;
+box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+transition: 0.15s ease;
+cursor: pointer;
+position: relative;
+}
+
+.checkbox-wrapper-16 .checkbox-tile:before {
+content: "";
+position: absolute;
+display: block;
+width: 1.25rem;
+height: 1.25rem;
+border: 2px solid #b5bfd9;
+background-color: #fff;
+border-radius: 50%;
+top: 0.25rem;
+left: 0.25rem;
+opacity: 0;
+transform: scale(0);
+transition: 0.25s ease;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='://www.w3.org/2000/svg' width='192' height='192' fill='%23FFFFFF' viewBox='0 0 256 256'%3E%3Crect width='256' height='256' fill='none'%3E%3C/rect%3E%3Cpolyline points='216 72.005 104 184 48 128.005' fill='none' stroke='%23FFFFFF' stroke-linecap='round' stroke-linejoin='round' stroke-width='32'%3E%3C/polyline%3E%3C/svg%3E");
+background-size: 12px;
+background-repeat: no-repeat;
+background-position: 50% 50%;
+}
+
+.checkbox-wrapper-16 .checkbox-tile:hover {
+border-color: #2260ff;
+}
+
+.checkbox-wrapper-16 .checkbox-tile:hover:before {
+transform: scale(1);
+opacity: 1;
+}
+
+.checkbox-wrapper-16 .checkbox-icon {
+transition: 0.375s ease;
+color: #494949;
+}
+
+.checkbox-wrapper-16 .checkbox-icon svg {
+width: 3rem;
+height: 3rem;
+}
+
+.checkbox-wrapper-16 .checkbox-label {
+color: #707070;
+transition: 0.375s ease;
+text-align: center;
 }
 
 /* Para quitar los puntos a los items de listas */
@@ -147,6 +249,84 @@ h1{
     margin: auto;
 }   
 
+.card {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    padding: 32px;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+  }
+  
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    color: #e8e8e8;
+    transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+  }
+  
+  .content .heading {
+    font-weight: 700;
+    font-size: 32px;
+  }
+  
+  .content .para {
+    line-height: 1.5;
+  }
+  
+  .content .btn {
+    color: #e8e8e8;
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    background: linear-gradient(-45deg, #f89b29 0%, #ff0f7b 100% );
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(-45deg, #f89b29 0%, #ff0f7b 100% );
+    z-index: -1;
+    transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+  }
+  
+  .card:hover::before {
+    height: 100%;
+  }
+  
+  .card:hover {
+    box-shadow: none;
+  }
+  
+  .card:hover .btn {
+    color: #212121;
+    background: #e8e8e8;
+  }
+  
+  .content .btn:hover {
+    outline: 2px solid #e8e8e8;
+    background: transparent;
+    color: #e8e8e8;
+  }
+  
+  .content .btn:active {
+    box-shadow: none;
+  }
+  
 h2 {
     padding-bottom: 20px;
     margin-top: 200px;
@@ -160,6 +340,7 @@ p {
 .icono {
     width: 70px;
     height: 70px;
+    background-color: #f4f4f5;
 }
 
 .iconos-contactos{
