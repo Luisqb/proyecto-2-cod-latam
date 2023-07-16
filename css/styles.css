@@ -169,7 +169,7 @@ a {
 
 .menu{
     display: flex;
-    font-size: 22px;
+    font-size: 18px;
 }
 
 li.iten-menu a {
@@ -349,7 +349,10 @@ footer{
 
 @media(min-width: 1024px) {
 
-  
+    .menu{
+        
+        font-size: 22px;
+    }
     h1{
         font-size: 48px;
         text-align: left;
@@ -396,10 +399,6 @@ footer{
 
     
 
-}
-@media(min-width: 360px){
-  .menu{
-    font-size: 18px;
 }
 
 /* Recomendaciones! 
