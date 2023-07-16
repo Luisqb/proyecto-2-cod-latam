@@ -187,7 +187,7 @@ img {
     max-width: 100%;
 }
 
-/*section{
+section{
     min-height: 100vh;
     
 }
@@ -401,7 +401,7 @@ footer{
   .menu{
     font-size: 18px;
 }
-}
+
 /* Recomendaciones! 
 *  - Comenzar desde lo más general y luego ir hacia lo mas específico, asignando primero
 *    "estilos generales". Una buena idea sería comenzar por el <body> ;)
