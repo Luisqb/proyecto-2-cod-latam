@@ -42,12 +42,18 @@ header {
     left: 0;
     box-shadow: 0 4px 12px 5px grey;
 }
+.logo{
+
+border-radius: 1px; color: #0f0f0f;
+padding-right:  8px;
+}
 
 /*Logo personal*/
 .checkbox-wrapper-16 *,
 .checkbox-wrapper-16 *:after,
 .checkbox-wrapper-16 *:before {
 box-sizing: border-box;
+
 }
 
 .checkbox-wrapper-16 .checkbox-input {
@@ -94,7 +100,7 @@ display: flex;
 flex-direction: column;
 align-items: center;
 justify-content: center;
-width: 7rem;
+width: 6rem;
 min-height: 5rem;
 border-radius: 0.5rem;
 border: 2px solid #b5bfd9;
@@ -193,7 +199,7 @@ img {
 
 .foto-perfil {
     width: 300px;
-    border-radius: 100%;
+    border-radius: 50%;
     padding: 0 20px;
    
 }
@@ -249,83 +255,7 @@ h1{
     margin: auto;
 }   
 
-.card {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-   
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-    padding: 32px;
-    overflow: hidden;
-    border-radius: 10px;
-    transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
-  }
-  
-  .content {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 20px;
-    color: #e8e8e8;
-    transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
-  }
-  
-  .content .heading {
-    font-weight: 700;
-    font-size: 32px;
-  }
-  
-  .content .para {
-    line-height: 1.5;
-  }
-  
-  .content .btn {
-    color: #e8e8e8;
-    text-decoration: none;
-    padding: 10px;
-    font-weight: 600;
-    border: none;
-    cursor: pointer;
-    background: linear-gradient(-45deg, #f89b29 0%, #ff0f7b 100% );
-    border-radius: 5px;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-  }
-  
-  .card::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 5px;
-    background: linear-gradient(-45deg, #f89b29 0%, #ff0f7b 100% );
-    z-index: -1;
-    transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
-  }
-  
-  .card:hover::before {
-    height: 100%;
-  }
-  
-  .card:hover {
-    box-shadow: none;
-  }
-  
-  .card:hover .btn {
-    color: #212121;
-    background: #e8e8e8;
-  }
-  
-  .content .btn:hover {
-    outline: 2px solid #e8e8e8;
-    background: transparent;
-    color: #e8e8e8;
-  }
-  
-  .content .btn:active {
-    box-shadow: none;
-  }
+
   
 h2 {
     padding-bottom: 20px;
@@ -356,11 +286,11 @@ footer{
     color: #fbfbfb;
     text-align: center;
 }
-
+/*dark
 /* The switch - the box around the slider */
 .switch {
     display: block;
-    --width-of-switch: 3.5em;
+    --width-of-switch: 2.9em;
     --height-of-switch: 2em;
     /* tamaño del icono del control deslizante -- sol y luna */
     --size-of-icon: 1.4em;
@@ -417,10 +347,9 @@ footer{
   }
 
 
-
-
 @media(min-width: 1024px) {
 
+  
     h1{
         font-size: 48px;
         text-align: left;
@@ -429,6 +358,12 @@ footer{
         font-size: 32px;
 
     }
+    
+    .switch {
+      display: block;
+      --width-of-switch: 3.5em
+    }
+    
 
     #inicio{
     display: flex;
@@ -439,7 +374,7 @@ footer{
 
     }
     
-
+    
     .seccion1{
     
     display: flex;
@@ -459,10 +394,14 @@ footer{
     background-color: #252525;
     color: #f2f2f2;
 
+    
 
 }
-
-
+@media(min-width: 360px){
+  .menu{
+    font-size: 18px;
+}
+}
 /* Recomendaciones! 
 *  - Comenzar desde lo más general y luego ir hacia lo mas específico, asignando primero
 *    "estilos generales". Una buena idea sería comenzar por el <body> ;)
