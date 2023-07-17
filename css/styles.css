@@ -44,7 +44,7 @@ header {
 }
 .logo{
 
-border-radius: 1px; color: #0f0f0f;
+border-radius: 1px; 
 padding-right:  8px;
 }
 
@@ -179,7 +179,7 @@ li.iten-menu a {
 li.iten-menu:hover,
 li.iten-menu a.active
     {
-    background-color:rgba(175, 89, 158, 0.3);
+    background-color:rgba(25, 197, 206, 0.584);
     transition: background-color 0.3s;
 
 }
@@ -238,16 +238,16 @@ h1{
 }
 
 .boton-cv {
-    background-color: #af599e;
+    background-color: rgba(25, 197, 206, 0.584);
     font-size: 20px ;
-    color: #fbfbfb;
+    color: black;
     padding: 20px;
     border-radius: 30px;
     margin: 20px;
 }
 
 .hablemos{
-    background-color: rgba(175, 89, 158, 0.3);
+    background-color:rgb(25, 197, 206);
     border-radius: 10px;
     width: 90%;
     max-width: 800px;
@@ -282,7 +282,7 @@ p {
 
 footer{
     height: 90px;
-    background-color: #af599e;
+    background-color: #2260ff;
     color: #fbfbfb;
     text-align: center;
 }
@@ -396,6 +396,9 @@ footer{
 .dark-mode {
     background-color: #252525;
     color: #f2f2f2;
+
+    
+    
 
     
 
